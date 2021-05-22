@@ -6,8 +6,7 @@
   "author": "starshunter <petercheng0303@gmail.com>",
   "license": "MIT",
   "scripts": {
-      "start": "cd frontend && yarn start",
-      "server": "cd backend && yarn server",
-      "build": "cd frontend && yarn build"
+      "start": "cd backend && yarn start",
+      "build": "cd frontend && yarn install && yarn build"
   }
 }
