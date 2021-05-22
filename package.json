@@ -1,0 +1,13 @@
+{
+  "name": "TestHeroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/starshunter/TestHeroku.git",
+  "author": "starshunter <petercheng0303@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+      "start": "cd frontend && yarn start",
+      "server": "cd backend && yarn server",
+      "build": "cd frontend && yarn build"
+  }
+}
