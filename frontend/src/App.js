@@ -3,11 +3,11 @@ import './App.css';
 import React, {Component} from 'react';
 import axios from 'axios';
 
-const API_ROOT = 'http://localhost:4000'
-const instance = axios.create({
-  baseURL: API_ROOT,
-  withCredentials: true
-})
+// const API_ROOT = 'http://localhost:4000'
+// const instance = axios.create({
+//   baseURL: API_ROOT,
+//   withCredentials: true
+// })
 
 class App extends Component {
     constructor(props) {
@@ -19,7 +19,7 @@ class App extends Component {
     }
     getMsg = async() => {
         try {
-            const {data} = await instance.post('/');
+            const {data} = await axios.post('/');
             this.setState({msg: data})
         } catch(error) {
             console.log('An error had occurred' + error);
